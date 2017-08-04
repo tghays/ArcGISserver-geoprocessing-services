@@ -69,3 +69,5 @@ for tweetObj in results:
         avg_sentiment = sum(temp_sentiment)/float(len(temp_sentiment))
         avg_sentiment_chart_list.append(avg_sentiment)
 ```
+<br>
+The average sentiment is calculated from the '''avg_sentiment_chart_list'''
