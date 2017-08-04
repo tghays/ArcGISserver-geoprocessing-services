@@ -39,6 +39,7 @@ results = api.GetSearch(raw_query="q={0}&count=300".format(urlQuery))
 <br>
 Iterate through the returned results objects, then iterate through each sentence by checking if the sentence is longer than 3 words and a sentiment analysis can be justified.  Sentiment polarity is retrieved for each sentence in the tweet, then averaged to obtain sentiment polarity for the tweet as a whole.
 <br>
+
 ```python
 for tweetObj in results:
     blob = TextBlob(tweetObj.text)
