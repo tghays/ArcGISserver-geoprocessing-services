@@ -71,6 +71,7 @@ for tweetObj in results:
 ```
 <br>
 The average sentiment is calculated from the `avg_sentiment_chart_list` that has average sentiment appended to it for each tweet.  Based on the sentiment polarity value, a sentiment classification is assigned (e.g. "Slightly Good" for 0.1-0.2 polarity).  Using ArcPy, the response is returned as a string by the SetParameterAsText method.  The HTML page is created here as well, looping through zipped lists of the tweet meta-data and inserts this information in a HTML table.
+<br>
 ```python
 if len(avg_sentiment_chart_list) > 0 :
     ret_string = '{3} Sentiment is {0} ({1}), based on {2} tweets in the last week.  Sentiment Polarity is on a scale from -1 to +1 and uses the NLTK methodology'.format(overall_sentiment, overall_sentiment_val_str, str(number_tweets), query)
@@ -89,7 +90,7 @@ if len(avg_sentiment_chart_list) > 0 :
 
     # create title heading for chart
     f.write('<h1 style="text-align: center">Charlotte Greenway Information Model - 2017 Intern Project</h1>')
-    f.write('<h2 style="text-align: center">Twitter Sentiment Analysis Results for <div style="color: red">"{0}"</div></h2>'.format(query.title()))
+    f.write('<h2 style="text-align: center">Twitter Sentiment Analysis Results for <div style="color: red">"{0}"</div </h2>'.format(query.title()))
     f.write('<h3 style="text-align: center; color:gray">via the Twitter API with NLTK methodology</h1><br><br>')
 
     f.write('<h3>Link to Twitter with Search Term: "<a href="https://twitter.com/search?q={0}">{0}</a>"</h3>'.format(query))
