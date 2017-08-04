@@ -6,7 +6,7 @@
 ## Overview
 This geoprocessing tool can be exposed through a Geoprocessing Service on an ArcGIS Server.  As a proof of concept, this module uses the <a href="https://textblob.readthedocs.io/en/dev/">TextBlob library and methodology</a> for sentiment analysis, but <a href="https://cloud.google.com/natural-language/">more advanced</a> NLP libraries and methodologies can be used. 
 <br>
-The user passes in a string of text to be queried against the Twitter API and each tweet is parsed for analysis with TextBlob.  An simple HTML table is created each time the tool is run
+The user passes in a string of text to be queried against the Twitter API and each tweet is parsed for analysis with TextBlob.  A <a href="twitter_verification.html" target="_blank">simple HTML page and table</a> is created each time the tool is run
 
 <br>
 <br>
