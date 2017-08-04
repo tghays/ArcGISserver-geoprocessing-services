@@ -1,6 +1,5 @@
 # Twitter Sentiment Analysis Geoprocessing Service
-<img style="align:center" src="twitter_sentiment.gif"></img>
-
+![This is where an GIF should be. Sorry you can't see it. Try using Chrome](twitter_sentiment.gif "Application Demo")
 
 <br><br>
 ## Overview
