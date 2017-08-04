@@ -1,3 +1,9 @@
+<img style="align:center" src'></img>
+
+
+
+
+
 Within this script, the user first authenticates themself with the Twitter API using the <a href="https://github.com/bear/python-twitter">Python-Twitter library</a>:
 
 ```
