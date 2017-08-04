@@ -1,10 +1,16 @@
+# Twitter Sentiment Analysis Geoprocessing Service
 <img style="align:center" src="twitter_sentiment.gif"></img>
 
 
 <br><br>
-## Usage
-This geoprocessing tool can be exposed through a Geoprocessing Service on an ArcGIS Server.  The user passes in a string of text to the input field and a the python script is run on the ArcGIS Server machine.  As a proof of concepthis module uses the <a href="https://textblob.readthedocs.io/en/dev/">TextBlob library and methodology</a> for sentiment analysis.
+## Overview
+This geoprocessing tool can be exposed through a Geoprocessing Service on an ArcGIS Server.  As a proof of concept, this module uses the <a href="https://textblob.readthedocs.io/en/dev/">TextBlob library and methodology</a> for sentiment analysis, but <a href="https://cloud.google.com/natural-language/">more advanced</a> NLP libraries and methodologies can be used. 
+<br>
+The user passes in a string of text to be queried against the Twitter API and each tweet is parsed for analysis with TextBlob.  An simple HTML table is created each time the tool is run
 
+<br>
+<br>
+## Usage
 The user first authenticates themself with the Twitter API using the <a href="https://github.com/bear/python-twitter">Python-Twitter library</a>:
 
 ```python
