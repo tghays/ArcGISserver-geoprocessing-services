@@ -1,7 +1,7 @@
 # ArcGISserver-geoprocessing-services
 Geoprocessing Services published to ArcGIS Server for use in an application
 
-Functionality:
-Twitter API sentiment analysis
-USGS Stream Monitoring
-Yelp Rating Retrieval
+Functionality: <br>
+Twitter API sentiment analysis<br>
+USGS Stream Monitoring<br>
+Yelp Rating Retrieval<br>
