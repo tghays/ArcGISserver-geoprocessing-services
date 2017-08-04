@@ -86,3 +86,4 @@ The average sentiment is calculated from the `avg_sentiment_chart_list` that has
       arcpy.SetParameterAsText(1, ret_string)
 ```
 <br>
+
