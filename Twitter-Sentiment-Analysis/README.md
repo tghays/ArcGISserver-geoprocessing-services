@@ -70,4 +70,4 @@ for tweetObj in results:
         avg_sentiment_chart_list.append(avg_sentiment)
 ```
 <br>
-The average sentiment is calculated from the ```avg_sentiment_chart_list```
+The average sentiment is calculated from the `<avg_sentiment_chart_list>`
