@@ -108,7 +108,6 @@ if len(avg_sentiment_chart_list) > 0 :
     f.write('<tr><td style="text-align: center; font-weight: bold">Average Sentiment</td><td colspan="3" style="text-align: center; font-weight: bold">{0}</td></tr>'.format(overall_sentiment_val_str))
     f.write('</table></html></body>')
     f.close()
-    
 else:
     ret_string = 'There are zero tweets returned in the last week from the query "{0}"'.format(query)
     arcpy.AddMessage(ret_string)
