@@ -1,10 +1,9 @@
 <img style="align:center" src="twitter_sentiment.gif"></img>
 
 
-
-
-
-Within this script, the user first authenticates themself with the Twitter API using the <a href="https://github.com/bear/python-twitter">Python-Twitter library</a>:
+<br><br>
+## Usage
+The user first authenticates themself with the Twitter API using the <a href="https://github.com/bear/python-twitter">Python-Twitter library</a>:
 
 ```
 consumer_key = 'consumer_key'
