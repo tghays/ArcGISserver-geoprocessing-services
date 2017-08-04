@@ -3,6 +3,8 @@
 
 <br><br>
 ## Usage
+This geoprocessing tool can be exposed through a Geoprocessing Service on an ArcGIS Server.  The user passes in a string of text to the input field and a the python script is run on the ArcGIS Server machine.  As a proof of concepthis module uses the <a href="https://textblob.readthedocs.io/en/dev/">TextBlob library and methodology</a> for sentiment analysis.
+
 The user first authenticates themself with the Twitter API using the <a href="https://github.com/bear/python-twitter">Python-Twitter library</a>:
 
 ```python
