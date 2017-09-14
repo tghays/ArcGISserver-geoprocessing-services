@@ -73,17 +73,19 @@ for tweetObj in results:
 The average sentiment is calculated from the `avg_sentiment_chart_list` that has average sentiment appended to it for each tweet.  Based on the sentiment polarity value, a sentiment classification is assigned (e.g. "Slightly Good" for 0.1-0.2 polarity).  Using ArcPy, the response is returned as a string by the SetParameterAsText method.  The HTML page is created here as well, looping through zipped lists of the tweet meta-data and inserts this information in a HTML table.
 <br>
 <br>
+
 ```python
-  if len(avg_sentiment_chart_list) > 0 :
-    ret_string = '{3} Sentiment is {0} ({1}), based on {2} tweets in the last week.'.format(overall_sentiment, overall_sentiment_val_str, str(number_tweets), query)
-    arcpy.AddMessage(ret_string)
-    arcpy.SetParameterAsText(1, ret_string)
-    print(ret_string)
-    #HTML page created here
-  else:
-    ret_string = 'There are zero tweets returned in the last week from the query "{0}"'.format(query)
-    arcpy.AddMessage(ret_string)
-    arcpy.SetParameterAsText(1, ret_string)
+    if len(avg_sentiment_chart_list) > 0 :
+        ret_string = '{3} Sentiment is {0} ({1}), based on {2} tweets in the last week.'.format(overall_sentiment, overall_sentiment_val_str, str(number_tweets), query)
+        arcpy.AddMessage(ret_string)
+        arcpy.SetParameterAsText(1, ret_string)
+        print(ret_string)
+        #HTML page created here
+    else:
+        ret_string = 'There are zero tweets returned in the last week from the query "{0}"'.format(query)
+        arcpy.AddMessage(ret_string)
+        arcpy.SetParameterAsText(1, ret_string)
 ```
+
 <br>
 
