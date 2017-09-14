@@ -75,16 +75,16 @@ The average sentiment is calculated from the `avg_sentiment_chart_list` that has
 <br>
 
 ```python
-    if len(avg_sentiment_chart_list) > 0 :
-        ret_string = '{3} Sentiment is {0} ({1}), based on {2} tweets in the last week.'.format(overall_sentiment, overall_sentiment_val_str, str(number_tweets), query)
-        arcpy.AddMessage(ret_string)
-        arcpy.SetParameterAsText(1, ret_string)
-        print(ret_string)
-        #HTML page created here
-    else:
-        ret_string = 'There are zero tweets returned in the last week from the query "{0}"'.format(query)
-        arcpy.AddMessage(ret_string)
-        arcpy.SetParameterAsText(1, ret_string)
+if len(avg_sentiment_chart_list) > 0 :
+    ret_string = '{3} Sentiment is {0} ({1}), based on {2} tweets in the last week.'.format(overall_sentiment, overall_sentiment_val_str, str(number_tweets), query)
+    arcpy.AddMessage(ret_string)
+    arcpy.SetParameterAsText(1, ret_string)
+    print(ret_string)
+    #HTML page created here
+else:
+    ret_string = 'There are zero tweets returned in the last week from the query "{0}"'.format(query)
+    arcpy.AddMessage(ret_string)
+    arcpy.SetParameterAsText(1, ret_string)
 ```
 
 <br>
